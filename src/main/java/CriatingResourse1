@@ -1,0 +1,18 @@
+import requests
+import json
+# API URL
+url = "https://favqs.com/api/users"
+
+# Read Input Json file
+file = open('C:\new2.json','r')
+json_input = file.read()
+request_json = json.loads(json_input)
+
+print (request_json)
+
+# Make POST request vith Json Input body
+
+
+response= requests.post(url,request_json)
+ #Validating Response Code
+ assert response.status_code ==200

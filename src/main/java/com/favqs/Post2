@@ -1,0 +1,4 @@
+import request
+website = "https://favqs.com/api/"
+response = requests.post(website)
+print(response.text)
