@@ -1,0 +1,13 @@
+
+          import requests
+          website = "https://favqs.com/api/"
+          response = requests.post(website. Json={
+                    {
+                      "user": {
+                        "login": "sdf09_df",
+                        "email": "user16@gmail.com",
+                        "password": "DF123df"
+                      }
+                    }
+          }
+          print(response.text)
